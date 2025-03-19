@@ -10,17 +10,18 @@
  * @returns {Object} object - API Gateway Lambda Proxy Output Format
  * 
  */
+let response
 
 export const lambdaHandler = async (event, context) => {
-    try {
-        return {
-            'statusCode': 200,
-            'body': JSON.stringify({
-                message: "I'm using canary deployments",
-            })
-        }
-    } catch (err) {
-        console.log(err);
-        return err;
-    }
+    // try {
+    //     return {
+    //         'statusCode': 200,
+    //         'body': JSON.stringify({
+    //             message: "I'm using canary deployments",
+    //         })
+    //     }
+    // } catch (err) {
+    //     console.log(err);
+    //     return err;
+    // }
 };
